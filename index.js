@@ -48,6 +48,9 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 // API Endpoints
+app.get("/", (req, res) =>
+  res.status(200).send("Welcome to MERN Blog default API Endpoint!")
+);
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
