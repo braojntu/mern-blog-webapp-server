@@ -8,8 +8,8 @@
 
 ### Add .env file and added the following 2 parameters
 
-MONGO_URL=mongodb+srv://user:pwd@yourclustername.mongodb.net/mernblog
-PORT=5000
+- MONGO_URL=mongodb+srv://user:pwd@yourclustername.mongodb.net/mernblog
+- PORT=5000
 
 ### Run Package
 
