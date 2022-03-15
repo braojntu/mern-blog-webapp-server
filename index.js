@@ -19,6 +19,10 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 // Middlewares
 app.use(express.json());
 app.use(cors());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", true);
+  next();
+});
 
 // DB Config
 mongoose
